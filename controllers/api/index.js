@@ -1,3 +1,5 @@
+// Hook up the server
+
 const router = require('express').Router();
 
 const userRoutes = require('./user-routes.js');
