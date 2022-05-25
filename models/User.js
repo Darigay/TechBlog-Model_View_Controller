@@ -1,8 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
+// import bycrypt to has the password
 const bcrypt = require('bcrypt');
 
-// creating User model
+// creating User model for a user
 class User extends Model {
 // set up method to run on instance data (per user) to check password
     checkPassword(loginPw) {
